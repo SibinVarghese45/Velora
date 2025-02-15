@@ -7,7 +7,7 @@ import ProfileImage from "./ProfileImage"
 
 const NavBar = () => {
 
-  const profileImage = useSelector((state) => state.auth.user.profileImage);
+  // const profileImage = useSelector((state) => state.auth.user.profileImage);
   const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
 
   const handleClick = () => {
@@ -22,7 +22,7 @@ const NavBar = () => {
         {
             isAuthenticated ? 
               <>
-                <ProfileImage profileImage = {profileImage}></ProfileImage>
+                <ProfileImage></ProfileImage>
                 <Button onClick={handleClick} className="">Logout</Button>
               </>
              : 

@@ -1,5 +1,5 @@
 import axiosInstance from "./axiosInstance"
-import { setSignUpData, setLoginData, authFailed } from "@/slices/authSlice";
+import { setSignUpData, setLoginData, authFailed } from "@/redux/slices/authSlice";
 
 export const registerUser = (userData) => async (dispatch) => {
     try{
